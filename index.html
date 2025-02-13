@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Navbar page -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    
+
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <title>House Property</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/YOUR_FA_CODE.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+     <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    
+    
+</head>
+<body>
+
+<!-- ..................................Navbar page..................................... -->    
+<nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container-fluid">
+        <!-- Logo & Brand -->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="./Contact images/PropertyScience3 3 (2).png" alt="Logo" class="me-2">
+            <span class="nav-property">Property</span> Science
+        </a>
+
+        <!-- Navbar Toggler for Mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="bi bi-list"></span>
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#">House Hunt</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Desktop Valuation</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Investable Score</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Speak to an Expert</a></li>
+                <div class="nav-icons">
+                    <i class=" icon"><img src="./Contact images/menu.png" alt=""></i>  
+                    <i class="icon"><img src="./Contact images/Vector (9).png" alt=""></i>  
+                    <img src="./Contact images/Ellipse 1881.png" alt="Profile" class="profile-img"> 
+                </div>
+            </ul>
+        </div>
+
+        <!-- <div class="nav-icons">
+            <i class=" icon"><img src="./Contact images/menu.png" alt=""></i> 
+            <i class="icon"><img src="./Contact images/Vector (9).png" alt=""></i> 
+            <img src="./Contact images/Ellipse 1881.png" alt="Profile" class="profile-img"> 
+        </div> -->
+    </div>
+</nav>
+
+
+<!-- .......................................Main-home-page................................................. -->
+
+<section class="Home-container">
+   
+    <div class="container py-5">
+        <!-- Search Box -->
+        <div class="search-box">
+            <!-- Text + Input Section -->
+            <div class="search-content">
+                <span class="search-label">Where?</span>
+                <input type="text" class="search-input" placeholder="Search location" id="searchInput">
+            </div>
+            <!-- Search Icon -->
+            <div id="iconContainer">
+                <img src="./Contact images/add.svg" class="search-icon" alt="">
+            </div>
+
+            <!-- Suggestions Dropdown -->
+            <div class="suggestions" id="suggestionsBox">
+                <div class="suggestion-item">Teacher’s Colony, HSR Sector 5, Bengaluru, Karnataka, India</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Property Details Box -->
+    <!-- Property Details Box -->
+<div class="property-container" id="propertyDetails">
+    <div class="property-details">
+        <!-- Left Column (Property Info) -->
+        <div class="property-info">
+            <h4>🏡 Teacher’s Colony</h4>
+            <p><i class="bi bi-house-door"></i> <strong>44 properties</strong></p>
+            <p><i class="bi bi-building"></i> <strong>Builder & Developer:</strong> Bangalore</p>
+            <p><i class="bi bi-bed"></i> 2BHK, 3BHK</p>
+            <p><i class="bi bi-currency-rupee"></i> 28.9 Lakh - 41.9 Lakh</p>
+        </div>
+
+        <!-- Right Column (Price Details) -->
+        <div class="price-details">
+            <h5><i class="bi bi-tags"></i> Price Details</h5>
+            <p>Price: ₹7500</p>
+            <p>Discount: (-) ₹750</p>
+            <p>GST (18%): (+) ₹1215</p>
+            <hr>
+            <h4><strong>Total: ₹7965</strong></h4>
+
+            <!-- Checkbox for Terms -->
+            <div class="checkbox-container">
+                <input type="checkbox" id="termsCheckbox">
+                <label for="termsCheckbox">Read & Accept the <a href="#">terms & conditions</a></label>
+            </div>
+
+            <!-- Pay Button -->
+            <button class="btn btn-success w-100" id="payButton" disabled>Pay ₹7965</button>
+
+            <p style="font-size: 12px; color: gray; margin-top: 10px;">
+                Stress testing report will be delivered to you within three working days at your registered email-id.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Hero Section -->
+<div class="hero-section">
+ <!-- Left Side: Text & Button -->
+ <div class="hero-text">
+     <h1>Did you know the expected returns from your property?</h1>
+     <div class="hero-button">
+         <button class="btn">Get your results</button>
+     </div>
+ </div>
+
+ <!-- Right Side: Image -->
+ <div class="hero-image">
+     <img src="./Contact images/freepik__background__95361 1 (1).png" alt="House on Money">
+ </div>
+</div>
+
+</section>
+
+
+<!-- ..........................................Investable-Score................................................ -->
+
+
+<div class="investible-section">
+            
+    <!-- Title -->
+    <h2 class="investible-title">What is Investible Score?</h2>
+
+    <!-- Description Box -->
+    <div class="investible-box">
+        <p class="investible-text">
+            A higher score means higher return probabilities and less execution risk in the project. 
+            The investable score measures the risk and return of the property. It measures current 
+            price productivity, which means if it is fairly priced, under-priced, or an overpriced 
+            property. And what are the property's prospects for growth and future price appreciation, 
+            based on how the future infrastructure connectivity in the economy influences the property? 
+            It also measures the execution risk in the property that represents the probabilities of 
+            delay and defaults in the timely delivery of the project based on developers' and 
+            projects' performance ratings.
+        </p>
+
+        <!-- Button with Icon -->
+        <button class="investible-btn">
+            <img src="./Contact images/Button 3.png" alt="">
+        </button>
+    </div>
+
+</div>
+
+
+ <!-- .......................................Hover-Page......................................... -->
+
+ <div class="container py-5">
+         
+    <h2 class="customer-card-title">How FFP Score is computed?</h2>
+
+    <div class="row justify-content-center customer-card-row">
+        
+        <!-- Card 1 -->
+        <div class="col-md-6 col-xxl-3" >
+            <div class="custom-card">
+                <h2>01</h2>
+                <p>Future price appreciation is measured by adding the nominal return & the return due to the upcoming infrastructure influencing the project.</p>
+            </div>
+        </div>
+
+        <!-- Card 2 (Active by Default) -->
+        <div class="col-md-6 col-xxl-3">
+            <div class="custom-card active">
+                <h2>02</h2>
+                <p>The nominal returns are estimated by measuring the properties current price productivity, calculated using the rental yields.</p>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-6 mt-xxl-0 mt-md-4 col-xxl-3">
+            <div class="custom-card">
+                <h2>03</h2>
+                <p>Future infrastructure projects are mapped to calculate travel times across CBDs, with a price-time regression estimating project appreciation.</p>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-md-6 mt-xxl-0 mt-md-4 col-xxl-3">
+            <div class="custom-card">
+                <h2>04</h2>
+                <p>Future Price Projection is the addition of Nominal Return and Improvement due to upcoming infra.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- .........................................Graph-1 Page................................................. -->
+
+<div class="score-section row">
+            
+    <!-- Left Chart Section -->
+    <div class="chart-box col-md-12 col-lg-7 col-xxl-7">
+        <img class="info-image" src="./Contact images/Group 1000010522.svg" alt="">
+    </div>
+
+    <!-- Right Information Section -->
+    <div class="info-panel col-md-12 col-lg-5 col-xxl-5">
+        <h4 class="info-topic">How to read this?</h4>
+
+        <div class="info-card1">
+             <img src="./Contact images/Group 1000010497 (1).png" alt="">
+            <div class="info-text">
+                <h5>Score over 700</h5>
+                <p>Excellent to outstanding rating,<br> signifies high return & low risk probabilities.</p>
+            </div>
+        </div>
+
+        <div class="info-card2">
+             <img src="./Contact images/Group 1000010497 (2).png" alt="">
+            <div class="info-text">
+                <h5>Score over 400</h5>
+                <p>Good rating<br> signifies a satisfactory return.</p>
+            </div>
+        </div>
+
+        <div class="info-card3">
+             <img src="./Contact images/Group 1000010497 (3).png" alt="">
+            <div class="info-text">
+                <h5>Score under 400</h5>
+                <p>Average to poor rating,<br> signifies less return or high risk probabilities.</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+ <!-- .....................................Graph-2 Page................................................... -->
+
+ <div class="main-graph-box-container">
+    <div class="row main-graph-box">
+        <p class="col graph-box-para1" onclick="showGraph(1)">Distribution of investable Score (no projects)</p>
+        <p class="col graph-box-para2" onclick="showGraph(2)">Distribution of FFP</p>
+        <p class="col graph-box-para3" onclick="showGraph(3)">Distribution of developer's performance rating</p>
+        <p class="col graph-box-para4" onclick="showGraph(4)">Distribution of execution score</p>
+        <p class="col graph-box-para5" onclick="showGraph(5)">Scatter plot of FFP vs execution score</p>
+    </div>
+    <div class="row graph-box-2">
+        <img id="graph-1" src="./Contact images/image 642.svg" alt="Graph 1" class="active">
+        <img id="graph-2" src="./Contact images/Group 1000010522.svg" alt="Graph 2">
+        <img id="graph-3" src="./Contact images/image 642.svg" alt="Graph 3">
+        <img id="graph-4" src="./Contact images/Group 1000010522.svg" alt="Graph 4">
+        <img id="graph-5" src="./Contact images/image 642.svg" alt="Graph 5">
+         <p >The Distribution of investable Score Highlights the potential and risk of investments,helping investors assess and rank options based on profitability and risk factors for informed descision making</p>
+    </div>
+</div>
+
+
+
+<!-- .......................................Sub-Home-page................................................... -->
+
+
+<div class="pricing-box row">
+            
+    <!-- Left-side Image -->
+    
+    <!-- Right-side Content -->
+     <div class="col-lg-7 col-xxl-7 col-md-12 main-pricing-details">
+        <h5 class="pricing-title">We have a pricing that’s perfect for you</h5>
+     </div>
+    <div class="col-lg-5 col-xxl-5 col-md-12 pricing-details">
+        <p class="pricing-amount">₹7,500/project</p>
+        <p class="text-muted1">FPP & Investable Score report cost</p>
+
+        <!-- Features List -->
+         <div class="Feature-list">
+            <img class="Features-list-image1" src="./Contact images/Group 1000010497.png" alt="">
+            <p class="Features-list-item">Report will be delivered within 2 working days<br>to your registered email.</p>
+         </div>
+         <div class="Feature-list">
+            <img class="Features-list-image2" src="./Contact images/Group 1000010497.png" alt="">
+            <p class="Features-list-item">10% off for up to 3 projects, 20% off for 4+ projects.</p>
+         </div>
+         <div class="Feature-list">
+            <img class="Features-list-image3" src="./Contact images/Group 1000010497.png" alt="">
+            <p class="Features-list-item">Contact sales 9800000000 for on bulk<br> projects report.</p>
+         </div>
+
+        <!-- Button -->
+        <button class="btn pricing-btn">Sample Report</button>
+    </div>
+</div>
+
+<!-- .......................................Slider-page................................................... -->
+
+<!-- Swiper Slider with Scroll Button -->
+<div class="Slider-container py-5">
+    <!-- Section Header -->
+    <div class="section-header">
+        <h2 class="Slider-text">Use Cases</h2>
+        <button class="case-btn">See All Case Studies</button>
+    </div>
+
+    <!-- Swiper -->
+    <div class="swiper-container Slider-margin">
+        <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="./Contact images/p11-500x500.jpg.png" alt="Building 1">
+                            <div class="card-body">
+                                <p class="text-muted">Building <span class="dot">•</span> March 19, 2024</p>
+                                <div class="slider-underline"></div>
+                                <p class="card-text">Desktop Valuation of an Iconic building in Mumbai</p>
+                            </div>
+                            <div class="card-footer">
+                                <img class="arrow-btn" src="./Contact images/Button 3.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="./Contact images/p11-500x500.jpg (2).png" alt="Building 2">
+                            <div class="card-body">
+                                <p class="text-muted">Building <span class="dot">•</span> March 19, 2024</p>
+                                <div class="slider-underline"></div>
+                                <p class="card-text">Desktop Valuation of an old apartment in Bangalore</p>
+                            </div>
+                            <div class="card-footer">
+                                <img class="arrow-btn" src="./Contact images/Button 3.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="./Contact images/p11-500x500.jpg (1).png" alt="Building 3">
+                            <div class="card-body">
+                                <p class="text-muted">Building <span class="dot">•</span> March 19, 2024</p>
+                                <div class="slider-underline"></div>
+                                <p class="card-text">Desktop Valuation of an independent house in Delhi</p>
+                            </div>
+                            <div class="card-footer">
+                                <img class="arrow-btn" src="./Contact images/Button 3.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="./Contact images/p11-500x500.jpg.png" alt="Building 4">
+                            <div class="card-body">
+                                <p class="text-muted">Building <span class="dot">•</span> March 19, 2024</p>
+                                <div class="slider-underline"></div>
+                                <p class="card-text">Desktop Valuation of a modern office in Delhi</p>
+                            </div>
+                            <div class="card-footer">
+                                <img class="arrow-btn" src="./Contact images/Button 3.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="./Contact images/p11-500x500.jpg (2).png" alt="Building 5">
+                            <div class="card-body">
+                                <p class="text-muted">Building <span class="dot">•</span> March 19, 2024</p>
+                                <div class="slider-underline"></div>
+                                <p class="card-text">Desktop Valuation of a residential villa in Pune</p>
+                            </div>
+                            <div class="card-footer">
+                                <img class="arrow-btn" src="./Contact images/Button 3.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="./Contact images/p11-500x500.jpg (1).png" alt="Building 6">
+                            <div class="card-body">
+                                <p class="text-muted">Building <span class="dot">•</span> March 19, 2024</p>
+                                <div class="slider-underline"></div>
+                                <p class="card-text">Desktop Valuation of a shopping mall in Hyderabad</p>
+                            </div>
+                            <div class="card-footer">
+                                 <img class="arrow-btn" src="./Contact images/Button 3.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Swiper Controls -->
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="swiper-scrollbar-container mt-3">
+        <div class="swiper-scrollbar">
+            <div class="swiper-underline"></div>
+            <div class="scroll-thumb"></div>
+        </div>
+        <span class="scroll-text">Scroll</span>
+    </div>
+</div>
+
+<!-- .......................................Dropdown-page................................................... -->
+
+<div class="faq-container text-center">
+    <h1 class="faq-title text-dark">Frequently asked questions</h1>
+    
+    <div class="accordion accordion-flush mt-4" id="faqAccordion">
+        
+        <!-- FAQ Item 1 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    Do we check the legal consultation related to projects?
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    We ensure legal consultation for all projects to maintain compliance and protect client interests.
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Do you do the transaction?
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    No, we do not process financial transactions but provide guidance and facilitate secure transactions.
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    How do you rate the developers?
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    Developers are rated based on experience, project quality, client feedback, and industry expertise.
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Item 4 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    How do you estimate future price appreciation?
+                </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    Our estimation is based on market trends, location analysis, demand-supply dynamics, and expert forecasts.
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Item 5 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    What is the investable score?
+                </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    The investable score is a metric that evaluates the potential of an investment based on various financial indicators.
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Item 6 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    How do you collect the data?
+                </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    We collect data through market research, verified sources, client feedback, and analytical tools.
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+<!-- .......................................Contact-page................................................... -->
+
+
+<!-- Footer Section -->
+<footer class="footer mt-auto py-5">
+    <div class="footer-container">
+        <div class="row">
+            <div class="col-md-4 footer-company">
+                <h5 class="footer-brand">
+                    <img src="./Contact images/PropertyScience3 3 (1).png" class="footer-logo" alt="Property Science Logo"> Property Science
+                </h5>
+            </div>
+            <h6 class="col-md-2 footer-topic1">House Hunt</h6>
+            <h6 class="col-md-2 footer-topic2">Desktop Valuation</h6>
+            <h6 class="col-md-2 footer-topic3">Investable Score</h6>
+            <h6 class="col-md-2 footer-topic4">Speak to an Expert</h6>
+        </div>
+        <div class="row">
+            <!-- Company Info -->
+            <div class="col-md-5 footer-company">
+                <p class="footer-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.Ut enim ad minim veniam.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-md-2 footer-links">
+                <h6 class="footer-heading">Quick Links</h6>
+                <ul class="list-unstyled footer-list">
+                    <li><a href="#" class="footer-link footer-link1"><img src="./Contact images/.png" class="footer-image" alt="">Latest News</a></li>
+                    <li><a href="#" class="footer-link"><img src="./Contact images/.png" class="footer-image" alt="">General Inquiries</a></li>
+                    <li><a href="#" class="footer-link"><img src="./Contact images/.png" class="footer-image" alt="">Case Studies</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-md-3 footer-contact">
+                <h6 class="footer-heading footer-heading1">Contact Us</h6>
+                <ul class="list-unstyled footer-list1">
+                    <li class="footer-contact-item footer-contact-item1"><img src="./Contact images/Vector (3).png" class="footer-contact-image" alt=""> contact@liasesforas.com</li>
+                    <li class="footer-contact-item"><img src="./Contact images/Vector (4).png"  class="footer-contact-image" alt="">+91 9833344500</li>
+                </ul>
+            </div>
+
+            <!-- Social Media -->
+            <div class="col-md-2 footer-social">
+                <h5 class="footer-heading ">Follow Us</h5>
+                <div class="footer-social-icons">
+                    <a href="#" class="social-link"><img src="./Contact images/Vector (5).png" alt=""></a>
+                    <a href="#" class="social-link"><img src="./Contact images/Vector (6).png" alt=""></a>
+                    <a href="#" class="social-link"><img src="./Contact images/Vector (7).png" alt=""></a>
+                    <a href="#" class="social-link"><img src="./Contact images/Vector (8).png" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-divider my-4"></div>
+        
+        <!-- Copyright and Policies -->
+        <div class="row footer-bottom">
+            <div class="col-md-6">
+                <p class="footer-copyright">© PropertyScience 2024 | All Rights Reserved</p>
+            </div>
+            <div class="col-md-6 text-md-end footer-policy">
+                <a href="#" class="footer-policy-link">Privacy Policy</a>  
+                <a href="#" class="footer-policy-link">Terms & Conditions</a>  
+                <a href="#" class="footer-policy-link">Cookie Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<!-- Script code for the input field -->
+ <!-- SwiperJS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script>
+
+    // code for graph 2
+function showGraph(index) {
+      // Hide all images
+      const graphs = document.querySelectorAll('.graph-box-2 img');
+      graphs.forEach(graph => graph.classList.remove('active'));
+
+      // Show the selected graph
+      document.getElementById(`graph-${index}`).classList.add('active');
+    }
+
+
+    const searchInput = document.getElementById("searchInput");
+ const iconContainer = document.getElementById("iconContainer");
+ const suggestionsBox = document.getElementById("suggestionsBox");
+ const propertyDetails = document.getElementById("propertyDetails");
+
+ // Predefined suggestions (Only these will be allowed)
+ const suggestions = [
+     "Teacher’s Colony, HSR Sector 5, Bengaluru, Karnataka, India"
+ ];
+
+ // Show dropdown only when a valid suggestion is typed
+ searchInput.addEventListener("input", function () {
+     let inputValue = searchInput.value.trim().toLowerCase();
+
+     // Check if input matches any suggestion
+     let matchedSuggestions = suggestions.filter(suggestion =>
+         suggestion.toLowerCase().startsWith(inputValue)
+     );
+
+     if (matchedSuggestions.length > 0) {
+         iconContainer.innerHTML = '<div class="plus-icon"><i class="bi bi-arrow-right"></i></div>';
+         suggestionsBox.innerHTML = matchedSuggestions
+             .map(suggestion => `<div class="suggestion-item">${suggestion}</div>`)
+             .join(""); // Update the dropdown with matching results
+         suggestionsBox.style.display = "block"; // Show suggestions
+
+         // Re-attach click event to new suggestion items
+         document.querySelectorAll(".suggestion-item").forEach(item => {
+             item.addEventListener("click", function () {
+                 searchInput.value = this.innerText;
+                 suggestionsBox.style.display = "none"; // Hide suggestions
+                 showDetails(); // Show property details
+             });
+         });
+     } else {
+         iconContainer.innerHTML = '<i class="bi bi-search search-icon"></i>';
+         suggestionsBox.style.display = "none"; // Hide dropdown if no match
+         propertyDetails.style.display = "none"; // Hide property details
+     }
+ });
+
+ // Function to show property details
+ function showDetails() {
+     propertyDetails.style.display = "block";
+ }
+
+//  swiper.........
+
+ const swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    scrollbar: {
+        el: '.scroll-thumb',
+        draggable: true,
+    },
+});
+
+ </script>
+
+
+
+
+<!-- ..................................Navbar page..................................... --> 
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>   -->
+    
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
